@@ -11,6 +11,7 @@
 // External libs.
 var path = require('path');
 var UglifyJS = require('uglify-js');
+var assign = require('lodash.assign');
 var uriPath = require('uri-path');
 var getOutputOptions;
 
@@ -223,7 +224,7 @@ exports.init = function(grunt) {
       if (typeof options.beautify === 'object') {
         // beautify options sent as an object are merged
         // with outputOptions and passed to the OutputStream
-        Object.assign(outputOptions, options.beautify);
+        assign(outputOptions, options.beautify);
       } else {
         outputOptions.beautify = true;
       }

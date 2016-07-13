@@ -374,6 +374,16 @@ module.exports = function(grunt) {
           'tmp/mangle.js': ['test/fixtures/src/simple.js']
         },
         mangle: true
+      },
+      beautify_Object: {
+        files: {
+          'tmp/beautify.js': ['test/fixtures/src/simple.js']
+        },
+        options: {
+          beautify: {
+            'indent_start': 2
+          }
+        }
       }
     },
 

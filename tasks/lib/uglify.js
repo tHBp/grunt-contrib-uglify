@@ -220,14 +220,13 @@ exports.init = function(grunt) {
       outputOptions.preamble = options.banner;
     }
 
-    if (options.beautify) {
+    if (options.beautify === true || typeof options.beautify === 'object') {
       if (typeof options.beautify === 'object') {
         // beautify options sent as an object are merged
         // with outputOptions and passed to the OutputStream
         assign(outputOptions, options.beautify);
-      } else {
-        outputOptions.beautify = true;
       }
+      outputOptions.beautify = true;
     }
 
     if (options.screwIE8) {

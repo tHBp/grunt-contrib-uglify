@@ -61,7 +61,7 @@ module.exports = function(grunt) {
       expression: false,
       maxLineLen: 32000,
       ASCIIOnly: false,
-      screwIE8: false,
+      screwIE8: true,
       quoteStyle: 0
     });
     var log = reportFacility( grunt, options );

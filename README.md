@@ -1,6 +1,6 @@
-# grunt-contrib-uglify v1.0.1 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-uglify.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-uglify) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ybtf5vbvtenii561/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-uglify/branch/master)
+# grunt-contrib-uglify v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-uglify.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-uglify) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ybtf5vbvtenii561/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-uglify/branch/master)
 
-> Minify javascript files with UglifyJS
+> Minify JavaScript files with UglifyJS
 
 
 
@@ -186,9 +186,9 @@ This string will be appended to the minified output. Template strings (e.g. `<%=
 
 #### screwIE8
 Type: `Boolean`  
-Default: `false`
+Default: `true`
 
-Pass this flag if you don't care about full compliance with Internet Explorer 6-8 quirks.
+Set this to `false` if you still care about full compliance with Internet Explorer 6-8 quirks.
 
 #### mangleProperties
 Type: `Boolean` `Object`
@@ -517,6 +517,7 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2016-07-13   v2.0.0   Update uglify-js to v2.7.0. `screwIE8` is enabled by default.
  * 2016-03-16   v1.0.1   Downgrade maxmin for Node.js 0.10.
  * 2016-03-04   v1.0.0   Use uglify-js ~2.6.2 to fix sourcemap issue. Improving docs for `global-defs` and `--define` options. Add `sourceMapUrl` option. add `bare_returns` option. Optionally set report verbosity level using report option.
  * 2016-01-29   v0.11.1   Update to lodash ^4.0.1. Update to grunt-contrib-clean ^0.7.0. Update to grunt-contrib-jshint ^0.12.0.
@@ -554,4 +555,4 @@ grunt.initConfig({
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com)
 
-*This file was generated on Thu Apr 07 2016 15:29:35.*
+*This file was generated on Wed Jul 13 2016 10:02:52.*

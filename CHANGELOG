@@ -1,3 +1,7 @@
+v2.0.0:
+  date: 2016-07-13
+  changes:
+    - Update uglify-js to v2.7.0. `screwIE8` is enabled by default.
 v1.0.1:
   date: 2016-03-16
   changes:
